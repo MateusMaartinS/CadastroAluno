@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<Aluno> lista = Controller.getInstancia().retornarAlunos();
         for(Aluno aluno: lista){
-            tvListaAlunos.setText(aluno.getRa()+" - "+ aluno.getNome()+"\n");
+            texto += (aluno.getRa()+" - "+ aluno.getNome()+"\n");
         }
         tvListaAlunos.setText(texto);
     }
