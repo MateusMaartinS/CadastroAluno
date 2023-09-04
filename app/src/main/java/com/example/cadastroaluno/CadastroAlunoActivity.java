@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class CadastroAlunoActivity extends AppCompatActivity {
 
-    private Button btSalvar;
+    private Button btSalvarAlun;
     private EditText edRaAluno;
     private EditText edNomeAluno;
 
@@ -22,8 +22,8 @@ public class CadastroAlunoActivity extends AppCompatActivity {
         edRaAluno = findViewById(R.id.edRaAluno);
         edNomeAluno = findViewById(R.id.edNomeAluno);
 
-        btSalvar = findViewById(R.id.btSalvar);
-        btSalvar.setOnClickListener(new View.OnClickListener() {
+        btSalvarAlun = findViewById(R.id.btSalvar);
+        btSalvarAlun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 salvarAluno();

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CadastroAluno"
         tools:targetApi="31">
         <activity
+            android:name=".cadastrar_professor"
+            android:exported="false" />
+        <activity
             android:name=".CadastroAlunoActivity"
             android:exported="false" />
         <activity

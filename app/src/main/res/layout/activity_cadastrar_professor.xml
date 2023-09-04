@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cadastrar_professor"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edNomeProfessor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome do Professor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edCpfProfessor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o CPF do Professor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edDataNasc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a Data de Nascimento do Professor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Admissão"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edDataAdmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a data de Admissão do Professor"/>
+
+    <Button
+        android:id="@+id/btSalvarProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_salvar"
+        android:backgroundTint="@color/verde"/>
+
+
+</LinearLayout>
+
