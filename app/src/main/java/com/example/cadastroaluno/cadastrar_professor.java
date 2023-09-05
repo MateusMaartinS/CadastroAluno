@@ -11,6 +11,8 @@ public class cadastrar_professor extends AppCompatActivity {
 
     private Button btSalvarProf;
 
+    private EditText edMatricula;
+
     private EditText edNomeProfessor;
 
     private EditText edCpfProfessor;
@@ -19,7 +21,6 @@ public class cadastrar_professor extends AppCompatActivity {
 
     private EditText edDataAdmi;
 
-    private EditText edMatricula;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
