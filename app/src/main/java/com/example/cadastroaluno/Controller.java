@@ -1,41 +1,37 @@
 package com.example.cadastroaluno;
 
+import com.example.cadastroaluno.Aluno;
+import com.example.cadastroaluno.Professor;
+
 import java.util.ArrayList;
 
 public class Controller {
+
     private static Controller instancia;
-    private ArrayList<Aluno> listaAluno;
+    private ArrayList<Aluno> listaAlunos;
+    private ArrayList<Professor> listaProfessores;
 
-    private ArrayList<Professor> listaProfessor;
-
-    private ArrayList<Disciplina> listaDisciplina;
-
-    public static Controller getInstancia(){
-        if(instancia == null){
+    public static Controller getInstance(){
+        if(instancia == null) {
             return instancia = new Controller();
-        }else{
+        }else {
             return instancia;
         }
     }
 
     private Controller(){
-        listaAluno = new ArrayList<>();
+        listaAlunos = new ArrayList<>();
+        listaProfessores = new ArrayList<>();
     }
 
-    public void salvarAluno (Aluno aluno){
-        listaAluno.add(aluno);
-    }
-    public ArrayList<Aluno> retornarAlunos(){
-        return listaAluno;
+    public void salvarAluno(Aluno aluno){listaAlunos.add(aluno);
     }
 
-    public ArrayList<Professor> retornarProfessor(){return listaProfessor}
-
-    prublic void salvarDisciplina(Disciplina disciplina){
-        listaDisciplinas.add(dsciplina);
+    public ArrayList<Aluno> retornarAlunos() {return listaAlunos;
+    }
+    public void salvarProfessor(Professor professor){listaProfessores.add(professor);
     }
 
-    public ArrayList<Disciplina>retornarDisciplinas(){
-        return listaDisciplina;
+    public ArrayList<Professor> retornarProfessor() {return listaProfessores;
     }
 }
